@@ -52,9 +52,9 @@ for (let i = 0; i <= 100; i++) {
 
 for (let i = numArray.length; i >= 0; i--) {
     for (let j = 2; j < i; j++) {
-        if (numArray[i] % j === 0) numArray.splice(numArray.indexOf(numArray[i]), 1);
+        if (numArray[i] % j === 0) numArray.splice(i, 1);
     }
-    if (numArray[i] < 2) numArray.splice(numArray.indexOf(i), 1);
+    if (numArray[i] < 2) numArray.splice(i, 1);
 }
 
 numArray.forEach(item => console.log(item));
