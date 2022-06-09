@@ -151,7 +151,10 @@ function filterPrimeNumbers(array) {
     })
 }
 
-//10 - Função que recebe um array e retorna um novo array. Para cada posição que tiver um numero par, retorna o numero com - par na frente, e para cada posição que tenha um ímpar, retorna o numero com - impar na frente e quando for zero retorne a string zero ao invés do numero 0.
+//10 - Função que recebe um array e retorna um novo array.
+//Para cada posição que tiver um numero par, retorna o numero com - par na frente,
+//e para cada posição que tenha um ímpar, retorna o numero com - impar na frente
+//e quando for zero retorne a string zero ao invés do numero 0:
 function oddOrEven(array) {
     return array.map(number => {
         if (number === 0) return "0";
