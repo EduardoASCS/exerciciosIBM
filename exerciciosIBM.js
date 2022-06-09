@@ -50,7 +50,7 @@ for (let i = 0; i <= 100; i++) {
     numArray.push(i);
 }
 
-for (let i = numArray.length; i >= 0; i--) {
+for (let i = numArray.length - 1; i >= 0; i--) {
     for (let j = 2; j < i; j++) {
         if (numArray[i] % j === 0) numArray.splice(i, 1);
     }
@@ -130,7 +130,7 @@ function filterOdd(array) {
 //9 - Função que recebe um array e retorna os números primos desse array.
 //Sem filter:
 function primeNumbers(array) {
-    for (let i = array.length; i >= 0; i--) {
+    for (let i = array.length - 1; i >= 0; i--) {
         if (array[i] < 2) array.splice(array.indexOf(array[i]), 1);
         for (let j = 2; j < i; j++) {
             if (array[i] % j === 0) {
