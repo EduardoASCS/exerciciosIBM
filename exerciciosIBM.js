@@ -90,7 +90,7 @@ function divisibleByFive() {
 
 //6 - Função que recebe dois parametros numéricos e imprime os valores entres eles.
 function numbernsBetween(num1, num2) {
-    if (typeof num1 !== "number" || typeof num2 !== "number") return console.log("Parameters must be a type of 'number'.");
+    if (typeof num1 !== "number" || typeof num2 !== "number") return console.log("Parameters must be of type 'number'.");
 
     const numbers = [num1, num2].sort((a, b) => a - b);
 
